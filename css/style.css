@@ -1,0 +1,192 @@
+body{
+    font-family:'Gilroy';
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+
+.nav{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+
+    color: #fff;
+}
+
+.menu{
+    display: flex;
+    gap:0 64px;
+    color: #FFF;
+
+    font-size: 18px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.menu__list-swipe{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+   
+    gap: 10px;
+
+    background: #ffffff6f;
+    border-radius: 0px 0px 5px 5px ;
+    padding: 5px;
+    transition: all 0.3s;
+    opacity: 0;
+    position: relative;
+}
+
+.menu__list-swipe a{
+    transition: all 0.2s;
+}
+
+.menu__list-swipe a:hover{
+    transform: translateX(-5%);
+}
+
+
+.menu__list-swipe.menu__list-swipe--active{
+    opacity: 1;
+}
+
+
+
+
+.menu__link{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.menu__link-btn{
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    width: 8px;
+    height: 8px;
+    display: block;
+    transform: rotate(45deg);
+    margin-left: 15px;
+    padding: 3px;
+
+    transition: all 0.4s;
+}
+
+.menu__link-btn.menu__link-btn--active{
+    transform: rotate(225deg);
+    
+}
+
+.basket__box{
+    position: relative;
+}
+
+.basket__box span{
+    position: absolute;
+    background: #E58411;
+    border-radius: 50%;
+    min-width: 15px;
+    padding: 3px;
+    text-align: center;
+    right: 0;
+    top: 5px;
+}
+
+
+.top{
+    background: url(../image/main/top-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 130vh;
+}
+
+
+.top__inner{
+    color: #fff;
+    text-align: center;
+    padding-top: 161px;
+    font-family: 'Gilroy';
+}
+
+
+.top__title{
+    font-size: 80px;
+    line-height: 130%;
+    letter-spacing: -0.8px;
+    text-transform: capitalize;
+}
+
+.top__text{
+    font-size: 24px;
+    line-height: 160%;
+    opacity: 0.800000011920929;
+
+    max-width: 606px;
+    margin: 0 auto;
+}
+
+.top__input-box{
+    position: relative;
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.top__input{
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 42px;
+    border: 0.862px solid rgba(255, 255, 255, 0.60);
+    padding: 15px 20px;
+    width: 344px;
+    color: #fff;
+    height: 55px;
+    opacity: 0.8;
+    position: relative;
+
+}
+
+.top__input::placeholder{
+    color: #fff;
+    font-family: 'Gilroy';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+
+.top__iput-image{
+    position: absolute;
+    right: 11px;
+    bottom: 0;
+    top: 7.5px;
+
+    background: #E58411;
+    border-radius: 24px;
+    padding: 11px;
+}
+
+
+.info__inner{
+    display: flex;
+}
+
+.info__cards-box{
+    display: flex;
+}
