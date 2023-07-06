@@ -21,6 +21,7 @@ body{
     top: 0;
     right: 0;
     left: 0;
+
 }
 
 
@@ -193,7 +194,11 @@ body{
     line-height: 130%;
     letter-spacing: -0.8px;
     text-transform: capitalize;
+
+    transition: all 1s ease-in;
+    opacity: 0;
 }
+
 
 .top__text{
     font-size: 24px;
@@ -202,13 +207,25 @@ body{
 
     max-width: 606px;
     margin: 0 auto;
+
+    transition: all 1s ease-in;
+    opacity: 0;
 }
+
+.top__input-box.element-show,
+.top__title.element-show,
+.top__text.element-show{
+    transform: none;
+}
+
 
 .top__input-box{
     position: relative;
     width: max-content;
     margin: 0 auto;
     margin-top: 25px;
+    transition: all 1s ease-in;
+    opacity: 0;
 }
 
 .top__input{
@@ -221,7 +238,6 @@ body{
     height: 55px;
     opacity: 0.8;
     position: relative;
-
 }
 
 .top__input::placeholder{
@@ -248,7 +264,13 @@ body{
 .info__inner{
     display: flex;
     margin-top: 120px;
+    transition: all 1s ease-in;
+    transform: translateY(20%);
+    opacity: 0;
 }
+
+
+
 
 .info__cards-box{
     display: flex;
@@ -308,6 +330,10 @@ body{
     color: #1E1E1E;
     font-size: 42px;
     font-family: 'Gilroy';
+
+    transition: all 1s ease-in;
+    transform: translateY(20%);
+    opacity: 0;
 }
 
 .price__bar{
@@ -324,6 +350,10 @@ body{
     padding: 5px;
     border-radius: 44px;
     margin-bottom: 100px;
+
+    transition: all 1s ease-in;
+    transform: translateY(20%);
+    opacity: 0;
 }
 
 .price__bar-list{
@@ -352,6 +382,12 @@ body{
     width: 100%;
     height: 100%;
     padding: 0 30px;
+}
+
+.price__slider-box{
+    transition: all 1s ease-in;
+    transform: translateY(20%);
+    opacity: 0;
 }
 
 
@@ -620,3 +656,7 @@ body{
 
 }
 
+.element-show{
+    transform: translateY(0);
+    opacity: 1; 
+}
