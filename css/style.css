@@ -498,6 +498,7 @@ body{
     .menu.menu--active{
         transform: translate(0);
         opacity: 1;
+        padding-top: 100px;
     }
 
     .menu__list-swipe{
@@ -533,13 +534,23 @@ body{
 
 
     .top{
-    height: 100vh;
+        height: auto;
+    }
+
+    .top__inner{
+        padding-top: 100px;
     }
 
     .top__title{
-        font-size: 66px;
+        font-size: 55px;
+    }
+
+    .top__input{
+        width: 280px;
+        background: #1e1e1e95;
     }
 }
+
 
 
 @media(max-width:500px){
@@ -557,5 +568,16 @@ body{
         border-radius: 0px 20px 20px 0px;
         gap: 20px;
     }
+
+    .top__title {
+        font-size: 36px;
+    }
+
+    .top__text{
+        font-size: 18px;
+    }
+
+
+
 }
 
