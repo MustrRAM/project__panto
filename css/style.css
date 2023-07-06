@@ -47,10 +47,38 @@ body{
 .menu__btn{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     width: 40px;
     height: 30px;
     display: none;
+    position: relative;
+}
+
+
+
+.menu__btn::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    transform: translate(0, -10px);
+}
+
+.menu__btn::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    transform: translate(0, 10px);
+
+}
+
+.menu__btn::before,
+.menu__btn::after{
+    transition: transform .3s, opacity .7s;
+
 }
 
 .menu__btn span{
@@ -59,6 +87,18 @@ body{
     background: #fff;
 }
 
+.menu__btn.active span{
+   opacity: 0;
+}
+
+
+
+.menu__btn.active::after{
+    transform:  rotate(45deg);
+}
+.menu__btn.active::before{
+    transform:  rotate(-45deg);
+}
 
 
 .menu__list-swipe{
@@ -136,7 +176,7 @@ body{
     background: url(../image/main/top-bg.png) no-repeat;
     background-size: cover;
     background-position: center;
-    height: 130vh;
+    height: 100vh;
 }
 
 
@@ -478,7 +518,7 @@ body{
        position: absolute;
        flex-direction: column;
        gap: 60px; 
-       padding-top: 160px;
+       padding-top: 100px;
        align-items: center;
        top: 0;
        right: 0;
@@ -491,14 +531,13 @@ body{
 
        z-index: 5;
        border-radius: 10px 0px 0px 10px;
-       transition: all 0.8s;
+       transition: all 0.5s;
        transform: translateX(110%);
     }
 
     .menu.menu--active{
         transform: translate(0);
         opacity: 1;
-        padding-top: 100px;
     }
 
     .menu__list-swipe{
