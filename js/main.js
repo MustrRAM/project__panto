@@ -1,10 +1,14 @@
 const menuBtn = document.querySelector('.menu__btn');
 const menu = document.querySelector('.menu');
+const topBlackout = document.querySelector('.top');
 
 menuBtn.addEventListener('click', function(){
     menu.classList.toggle('menu--active');
-        menuBtn.classList.toggle('active')
+    menuBtn.classList.toggle('active')
+    topBlackout.classList.toggle('active');
 });
+
+
 
 const menuLink = document.querySelector('.menu__link');
 const menuLinkBtn = document.querySelector('.menu__link-btn')
