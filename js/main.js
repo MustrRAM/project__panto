@@ -59,10 +59,10 @@ function onEntry(entry) {
         prevEl: '.swiper-button-prev' ,
       },
       clickable: true,
-   
       breakpoints:{
         320: {
             slidesPerView:1, 
+            speed:150,
          },
         500: {
            slidesPerView:2, 
@@ -85,7 +85,7 @@ $('.reviews__slider').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    infinite:false,
+    infinite:true,
     responsive: [
         {
             breakpoint: 1250,
@@ -99,7 +99,7 @@ $('.reviews__slider').slick({
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-
+                speed:200,
             }
         },
 
@@ -109,6 +109,8 @@ $('.reviews__slider').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 fade:true,
+                 speed:200,
+                
             }
         },
  
